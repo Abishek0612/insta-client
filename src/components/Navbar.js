@@ -1,4 +1,3 @@
-
 import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../App.js";
@@ -7,7 +6,7 @@ const Navbar = () => {
   //use useContext hook to acces the userContext and state
 
   const { state, dispatch } = useContext(UserContext);
-  const navigate=useNavigate()
+  const navigate = useNavigate();
 
   //Define a functionality to render the list of navbar item
   const renderList = () => {
